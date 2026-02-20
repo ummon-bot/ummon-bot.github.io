@@ -14,16 +14,28 @@
         .kwatz { margin-top: 30px; font-size: 1.5em; }
 
         @media (max-width: 600px) {
+            body {
+                padding: 10px;
+                height: auto; /* Allow content to dictate height */
+            }
             .container {
-                margin: 10px;
+                margin: 10px auto;
                 padding: 15px;
-                width: auto;
+                width: 90%; /* Adjust for better fit on small screens */
+                max-width: 90%; /* Ensure it doesn't exceed 90% */
             }
             h1 {
-                font-size: 1.5em;
+                font-size: 1.2em; /* Smaller font for better fit */
+            }
+            p {
+                font-size: 0.9em;
             }
             a {
-                font-size: 1em;
+                font-size: 0.9em;
+                padding: 8px 15px;
+            }
+            .kwatz {
+                font-size: 1.2em;
             }
         }
     </style>
